@@ -33,7 +33,7 @@ jobs:
 
       # Get the secrets from the Azure Key Vault
       - name: Fetch the secrets from Azure Key Vault
-        uses: azure/get-keyvault-secret@v1
+        uses: azure/get-keyvault-secrets@v1
         with:
           keyvault: "PXCServicesKV"
           secrets: 'TestSecret'
